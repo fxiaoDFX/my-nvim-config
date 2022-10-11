@@ -1,11 +1,16 @@
 " plugins path
 source ~/.config/nvim/plug/plugins.vim
 
-" config file path
+" plugin settings file path
 source ~/.config/nvim/plug/settings/coc.vim " coc keymaps
+source ~/.config/nvim/plug/settings/jsdoc.vim " <C-l> when cursor is on function
+
+" coc-settings.json custom directory
+let g:coc_config_home = '~/.config/nvim/plug/settings/coc-settings.json'
 
 """ basic settings """
 set termguicolors
+" number line
 set nu relativenumber
 " tab options
 set tabstop=4
@@ -32,15 +37,12 @@ set mouse=nv
 highlight ColorColumn guibg=LightSlateGray
 highlight CocUnusedHighlight guibg=Gray guifg=Pink
 
-" vim-JSDoc keymaps
-nmap <silent> <C-l> <Plug>(jsdoc)
-nmap <silent> <C-L> ?function<cr>:noh<cr><Plug>(jsdoc)
-
 " remap for vim shortcuts
 map <C-a> <ESC>^
 imap <C-a> <ESC>I
 map <C-e> <ESC>$
 imap <C-e> <ESC>A
+nnoremap <CR> o<ESC>k
 
 " keymap for coc-yank
 nnoremap <silent><space>y :<C-u>CocList -A --normal yank<cr>
@@ -53,6 +55,9 @@ nnoremap gb :tabprevious<CR>
 nnoremap gt :tabnext<CR>
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>i
+
+" turn off highlights
+nmap <leader>h :noh<CR>
 
 """ vim keymaps
 " <C-u> --- scroll up fast
