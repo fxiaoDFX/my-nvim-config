@@ -4,9 +4,10 @@ source ~/.config/nvim/plug/plugins.vim
 " plugin settings file path
 source ~/.config/nvim/plug/settings/coc.vim " coc keymaps
 source ~/.config/nvim/plug/settings/jsdoc.vim " <C-l> when cursor is on function
+" use <C-j> and <C-k> to move between edit points when using autocompletion
 
 " coc-settings.json custom directory
-let g:coc_config_home = '~/.config/nvim/plug/settings/coc-settings.json'
+"let g:coc_config_home = '~/.config/nvim/plug/settings'
 
 """ basic settings """
 set termguicolors
