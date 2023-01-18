@@ -1,10 +1,16 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["css", "javascript", "json", "html"],
-    
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "javascript",
+        "json",
+        "html"
+    ],
+    "prettier.tabWidth": 4,
+    "prettier.semi": false,
+
     "explorer.width": 30,
     "explorer.keyMappings.global": {
-        "<cr>" : ["expandable?", "expand", "open"],
+        "<cr>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
     }
 }
-

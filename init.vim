@@ -6,43 +6,54 @@ source ~/.config/nvim/plug/settings/coc.vim " coc keymaps
 source ~/.config/nvim/plug/settings/jsdoc.vim " <C-l> when cursor is on function
 " use <C-j> and <C-k> to move between edit points when using autocompletion
 
-" coc-settings.json custom directory
-"let g:coc_config_home = '~/.config/nvim/plug/settings'
+" Color Scheme settings
+set background=dark
+colorscheme PaperColor " <--- color from plugin
 
+" coc-settings.json custom directory
+let g:coc_config_home = '~/.config/nvim/plug/settings'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ basic settings """
-set termguicolors
+"set termguicolors
 " number line
 set nu relativenumber
+
 " tab options
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent smartindent
+
 " scroll options
 set scrolloff=8
-" column options
-set colorcolumn=80
+
 " set wrap options
 set wrap linebreak nolist
 set tw=80
 set whichwrap+=<,>,h,l
+
 " buffer options
 set hidden
 set wildmenu
 set path+=**
 set wildignore+=**/node_modules/**
+
 " mouse options
 set mouse=nv
+
 " colors options
-highlight ColorColumn guibg=LightSlateGray
 highlight CocUnusedHighlight guibg=Gray guifg=Pink
 
-" remap for vim shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" remap for vim shortcuts """
+" <C-a> go to start of line
+" <C-e> go to end of line
 map <C-a> <ESC>^
-imap <C-a> <ESC>I
+imap <C-a> <ESC>I 
 map <C-e> <ESC>$
-imap <C-e> <ESC>A
+imap <C-e> <ESC>A 
 nnoremap <CR> o<ESC>k
 
 " keymap for coc-yank

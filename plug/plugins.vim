@@ -6,5 +6,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-surround'
     " block comment based on function signature
     Plug 'heavenshell/vim-jsdoc', {'for': ['javascript', 'javascript.jsx', 'typescript'], 'do': 'make install'}
+    " Neovim dark theme
+    Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
