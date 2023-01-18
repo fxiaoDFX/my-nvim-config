@@ -12,5 +12,6 @@
     "explorer.keyMappings.global": {
         "<cr>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
-    }
+    },
+    "snippets.ultisnips.pythonPrompt": false
 }
