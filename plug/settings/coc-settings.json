@@ -13,5 +13,8 @@
         "<cr>": ["expandable?", "expand", "open"],
         "v": "open:vsplit"
     },
-    "snippets.ultisnips.pythonPrompt": false
+
+    "snippets.ultisnips.pythonPrompt": false,
+
+    "yank.highlight.duration": 500
 }

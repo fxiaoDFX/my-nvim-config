@@ -15,7 +15,6 @@ let g:coc_config_home = '~/.config/nvim/plug/settings'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ basic settings """
-"set termguicolors
 " number line
 set nu relativenumber
 
@@ -71,6 +70,9 @@ inoremap <C-t> <Esc>:tabnew<CR>i
 " turn off highlights
 nmap <leader>h :noh<CR>
 
+" coc-yank -- extension that highlights yanks and keeps a history of yanks
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr> 
+
 """ vim keymaps
 " <C-u> --- scroll up fast
 " <C-d> --- scroll down fast 
@@ -78,3 +80,8 @@ nmap <leader>h :noh<CR>
 """ vim-surround keymaps
 " cs[old-grouping-symbol][new-grouping-symbol] to change pairs
 " yss[grouping-symbol] --- to wrap entire line
+
+""" vim controls when using coc-jest
+" i to enter terminal mode
+" <C-\><C-N> to enter normal mode
+" <C-w>w to switch windows
